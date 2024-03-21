@@ -1,10 +1,10 @@
 AWSTemplateFormatVersion: "2010-09-09"
 Description: "This is the first cloud EC2 Instance using cloud formation template"
 Resources:
-  MyEC2Instance: #Sample Template to create an EC2Instance in AWS
-  Type: "AWS::EC2::Instance"
-  Properties:
-   ImageId: ami-0fe630eb857a6ec83
-   InstanceType: t2.micro
-   KeyName: demo-vpc.pem
-   SecurityGroups: sg-07ecf15bd19a7ed1b
+  DemoEC2Instance:
+    Type: AWS::EC2::Instance
+    Properties:
+      ImageId: ami-0fe630eb857a6ec83
+      InstanceType: t2.micro
+      KeyName: demo-vpc.pem
+      SecurityGroups: sg-07ecf15bd19a7ed1b
